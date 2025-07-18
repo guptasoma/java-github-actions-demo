@@ -13,8 +13,14 @@ public class AppTest {
 		assertEquals(app.add(2,3),5);
 	}
 	
+	@Test
+	public void testAddNegative() {
+		App app=new App();
+		assertEquals(app.add(-2,-3),-5);
+	}
+	
 	 @Test
 	 void testGreet() {
-	     assertEquals("Hello, Soma!", App.greet("Soma"));
+	     assertEquals("Bless you, Soma!", App.greet("Soma"));
 	 }
 }
